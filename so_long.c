@@ -20,7 +20,8 @@ int	main(int argc, char **argv)
 	display.char_readed = '0';
 	map = ft_map_coord(argv[1]);
 	display.text_map = ft_text_map(argv[1], map);
-	player_pos(display.text_map, &display);
+	if (display.text_map)
+		player_pos(display.text_map, &display);
 	if (!check_map(argc, map, argv[1], &display))
 	{
 		free_all(&display);
@@ -37,6 +38,5 @@ int	main(int argc, char **argv)
 	mlx_hook(display.win, 2, 1L << 0, movement, &display);
 	mlx_hook(display.win, 17, 0, game_over, &display);
 	mlx_loop(display.mlx);
-	exit(0);
 	return (0);
 }
