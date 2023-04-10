@@ -78,6 +78,6 @@ int		move_up(t_disp *display, int *num);
 int		move_right(t_disp *display, int *num);
 int		move_left(t_disp *display, int *num);
 int		move_down(t_disp *display, int *num);
-int		check_squareness(char **text_map);
+int		check_squareness(char **text_map, t_map map);
 
 #endif
