@@ -54,6 +54,8 @@ char	**ft_text_map(char *argv, t_map map)
 		ptr = get_next_line(fd);
 		if (ptr == NULL)
 			break ;
+		if ((int)ft_strlen(ptr) - 1 != map.cols)
+			return (NULL);
 		text_map[rows] = ft_calloc(map.cols + 2, sizeof(char));
 		ft_strlcpy(text_map[rows], ptr, map.cols + 2);
 		rows++;
