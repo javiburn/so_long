@@ -97,7 +97,7 @@ static int	some_checks(int argc, char **text_map, char *argv, t_map map)
 	newmap = ft_text_map(argv, map);
 	if (!check_way(newmap, map))
 		return (print_error(10));
-	if (!check_squareness(newmap))
+	if (!check_squareness(text_map, map))
 		return (print_error(4));
 	return (1);
 }
