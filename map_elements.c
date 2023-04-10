@@ -6,7 +6,7 @@
 /*   By: jsarabia <jsarabia@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/05 14:50:04 by jsarabia          #+#    #+#             */
-/*   Updated: 2023/04/05 15:29:56 by jsarabia         ###   ########.fr       */
+/*   Updated: 2023/04/10 13:55:08 by jsarabia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,10 +54,8 @@ char	**ft_text_map(char *argv, t_map map)
 		ptr = get_next_line(fd);
 		if (ptr == NULL)
 			break ;
-		if ((int)ft_strlen(ptr) - 1 != map.cols)
-			return (NULL);
-		text_map[rows] = ft_calloc(map.cols + 2, sizeof(char));
-		ft_strlcpy(text_map[rows], ptr, map.cols + 2);
+		text_map[rows] = ft_calloc((int)ft_strlen(ptr) + 2, sizeof(char));
+		ft_strlcpy(text_map[rows], ptr, (int)ft_strlen(ptr) + 2);
 		rows++;
 		free(ptr);
 		ptr = NULL;

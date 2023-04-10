@@ -6,7 +6,7 @@
 /*   By: jsarabia <jsarabia@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/05 14:38:52 by jsarabia          #+#    #+#             */
-/*   Updated: 2023/04/06 15:05:32 by jsarabia         ###   ########.fr       */
+/*   Updated: 2023/04/10 13:57:25 by jsarabia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,13 +20,12 @@ int	main(int argc, char **argv)
 	display.char_readed = '0';
 	map = ft_map_coord(argv[1]);
 	display.text_map = ft_text_map(argv[1], map);
-	if (display.text_map)
-		player_pos(display.text_map, &display);
 	if (!check_map(argc, map, argv[1], &display))
 	{
 		free_all(&display);
 		return (0);
 	}
+	player_pos(display.text_map, &display);
 	display.mlx = mlx_init();
 	display.win = mlx_new_window(display.mlx,
 			50 * map.cols, 50 * map.rows, "so_long");
