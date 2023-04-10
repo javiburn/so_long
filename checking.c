@@ -28,14 +28,14 @@ int	check_ber(char *argv)
 	return (1);
 }
 
-int	check_squareness(char **text_map)
+int	check_squareness(char **text_map, t_map map)
 {
 	int	y;
 	int	len;
 
 	y = 0;
-	len = (int)ft_strlen(text_map[y]);
-	while (text_map[y] != '\0')
+	len = (int)ft_strlen(text_map[0]);
+	while (y < map.rows)
 	{
 		if ((int)ft_strlen(text_map[y]) != len)
 			return (0);
