@@ -6,7 +6,7 @@
 /*   By: jsarabia <jsarabia@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/05 16:04:13 by jsarabia          #+#    #+#             */
-/*   Updated: 2023/04/06 14:20:44 by jsarabia         ###   ########.fr       */
+/*   Updated: 2023/04/10 12:51:55 by jsarabia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,22 @@ int	check_ber(char *argv)
 		return (0);
 	if (argv[n - 4] != '.')
 		return (0);
+	return (1);
+}
+
+int	check_squareness(char **text_map)
+{
+	int	y;
+	int	len;
+
+	y = 0;
+	len = (int)ft_strlen(text_map[y]);
+	while (text_map[y] != '\0')
+	{
+		if ((int)ft_strlen(text_map[y]) != len)
+			return (0);
+		y++;
+	}
 	return (1);
 }
 

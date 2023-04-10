@@ -6,7 +6,7 @@
 /*   By: jsarabia <jsarabia@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/05 15:10:45 by jsarabia          #+#    #+#             */
-/*   Updated: 2023/04/06 14:23:59 by jsarabia         ###   ########.fr       */
+/*   Updated: 2023/04/10 12:50:09 by jsarabia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -97,6 +97,8 @@ static int	some_checks(int argc, char **text_map, char *argv, t_map map)
 	newmap = ft_text_map(argv, map);
 	if (!check_way(newmap, map))
 		return (print_error(10));
+	if (!check_squareness(newmap))
+		return (print_error(4));
 	return (1);
 }
 

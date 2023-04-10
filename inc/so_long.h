@@ -6,7 +6,7 @@
 /*   By: jsarabia <jsarabia@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/22 13:25:38 by jsarabia          #+#    #+#             */
-/*   Updated: 2023/04/06 14:47:32 by jsarabia         ###   ########.fr       */
+/*   Updated: 2023/04/10 12:49:33 by jsarabia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -78,30 +78,6 @@ int		move_up(t_disp *display, int *num);
 int		move_right(t_disp *display, int *num);
 int		move_left(t_disp *display, int *num);
 int		move_down(t_disp *display, int *num);
+int		check_squareness(char **text_map);
 
-/*
-//int		check_map(int argc, char **text_map, t_map map, char *argv);
-//int		ft_check_ber(char *argv);
-int		ft_check_way(char **text_map, t_map map);
-int		ft_check_player(char **text_map);
-int		ft_check_exits(char **text_map, int y, t_map map);
-//int		some_checks(int argc, char **text_map, char *argv, t_map map);
-t_map	ft_map_coord(char *argv);
-//void	ft_free_all(t_disp *display);
-//void	ft_free_matrix(char **matrix);
-char	**ft_text_map(char *argv, t_map map);
-char	**walls_pos(char **text_map, t_map map);
-int		display_walls(t_map map, t_disp d);
-int		display_map(t_map map, t_disp display);
-int		display_player(t_disp *display);
-int		movement(int keycode, t_disp *display);
-int		move_up(t_disp *display, int *num);
-int		move_right(t_disp *display, int *num);
-int		move_left(t_disp *display, int *num);
-int		move_down(t_disp *display, int *num);
-int		display_floor(t_disp *display, int y, int x);
-int		display_collect(t_map map, t_disp *d);
-int		game_over(t_disp *display);
-int		print_error(int error);
-*/
 #endif
