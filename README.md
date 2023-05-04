@@ -1,4 +1,4 @@
-# so_long <img width="50" alt="![4ball] https://user-images.githubusercontent.com/72255876/236265185-a16864f1-83a4-4cef-965f-0fdbc9c76552.png">
+# so_long 
 
 A short videogame created to learn about the graphic environment and how to apply textures and sprites.
 
