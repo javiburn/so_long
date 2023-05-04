@@ -1,4 +1,5 @@
-# so_long :4ball:
+# so_long ![4ball](https://user-images.githubusercontent.com/72255876/236265185-a16864f1-83a4-4cef-965f-0fdbc9c76552.png)
+
 A short videogame created to learn about the graphic environment and how to apply textures and sprites.
 
 Using the minilibx, a graphic library designed by 42 students, I learned how to apply textures creating a game in which you have to use your character (Mr. Satan, from Dragon Ball Z) to collect al the Dragon Balls displayed through the map. The character is unable to pass through the walls, and once you have collected every single ball, the dragon Shenron appears and you win the game once you approach him.
