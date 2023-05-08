@@ -8,4 +8,16 @@ Using the minilibx, a graphic library designed by 42 students, I learned how to 
 
 <img width="471" alt="Screen Shot 2023-05-04 at 6 19 57 PM" src="https://user-images.githubusercontent.com/72255876/236264141-310b9e93-8dbf-40cb-91e9-97ffde3e1d73.png">
 
-The numbers os real steps is showed in the terminal.
+The numbers of real steps is showed in the terminal.
+
+It can show any map as long as it is valid, because one feature of the program is that it can identify which map is rather valid or not. The conditions are:
+
+-the map must be rectangular and surrounded by walls
+
+-it has to be a .ber file
+
+-it must contain, at least, one player, one way to exit and one object to collect
+
+-it can not contain more than one player nor more than one exit
+
+-you must be able to reach every element in the map. If there is something you can not reach, the map is invalid
